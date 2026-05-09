@@ -1,0 +1,16 @@
+let saldo=1000
+let serivcoDesejado
+let deposito
+let saque
+servicoDesejado=parseInt(prompt("Qual serviço você deseja?"))
+while (servicoDesejado!=0) {
+    if (servicoDesejado=1) {
+         deposito=parseInt(prompt("Quanto deseja depositar"))
+        deposito+saldo
+        console.log(servicoDesejado)
+    }else if(servicoDesejado=2) {
+         saque=parseInt(prompt("Quanto deseja sacar?"))
+        servicoDesejado-saque
+        console.log(servicoDesejado)
+    }else if(servicoDesejado)
+}
