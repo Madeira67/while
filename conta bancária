@@ -1,16 +1,26 @@
 let saldo=1000
-let serivcoDesejado
+let servicoDesejado
 let deposito
 let saque
+let operacoes=0
 servicoDesejado=parseInt(prompt("Qual serviço você deseja?"))
 while (servicoDesejado!=0) {
-    if (servicoDesejado=1) {
-         deposito=parseInt(prompt("Quanto deseja depositar"))
-        deposito+saldo
-        console.log(servicoDesejado)
-    }else if(servicoDesejado=2) {
+    if (servicoDesejado==1) {
+         deposito=parseInt(prompt("Quanto deseja depositar?"))
+        saldo=deposito+saldo
+        console.log("Depósito realizado")
+        operacoes++
+    }else if(servicoDesejado==2) {
          saque=parseInt(prompt("Quanto deseja sacar?"))
-        servicoDesejado-saque
-        console.log(servicoDesejado)
-    }else if(servicoDesejado)
+        saldo=saldo-saque
+        if(saque>saldo) {
+            console.log("Saldo insuficiente")
+        }
+        console.log("Saque realizado")
+    }else if(servicoDesejado==3) {
+        console.log("Saldo atual:R$ "+saldo.toFixed(2))
+        operecoes++
+    } 
 }
+console.log("Saldo atual:R$"+saldo.toFixed(2))
+console.log("Operações realizadas"+operacoes)
