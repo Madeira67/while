@@ -1,0 +1,15 @@
+let Totolec
+Totolec=parseInt(prompt("Quantos totolec's você deseja?"))
+let total=0
+let dia
+dia=prompt("Que dia é hoje?")
+while(Totolec!=0) {
+    total=Totolec+total
+    Totolec=prompt("Quantos totolec's você deseja?")
+}
+if (total>=120) {
+    console.log("Meta atingida!")
+}else if (total<120) {
+    console.log("Você precisa realizar mais "+(120-total)+" vendas")
+}
+console.log("No dia "+dia+" Foram vendidos "+total+" totolec's ")
