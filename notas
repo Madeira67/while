@@ -1,0 +1,44 @@
+let dinheiro = parseFloat(prompt("Digite uma quantia: "))
+let lobo = 0
+let peixe = 0
+let onca = 0
+let mico = 0
+let arara = 0
+let garca = 0
+let tartaruga = 0
+while(dinheiro>=200) {
+    lobo++
+     dinheiro = dinheiro - 200
+     }
+     console.log(lobo+ "De R$200")
+     while(dinheiro>=100) {
+     peixe++
+     dinheiro = dinheiro - 100
+     }
+     console.log(peixe+ "De R$100")
+     while(dinheiro>=50) {
+     onca++
+     dinheiro = dinheiro - 50
+     }
+     console.log(onca+ "De R$50")
+     while(dinheiro>=20) {
+     mico++
+     dinheiro = dinheiro - 20
+     }
+     console.log(mico+ "De R$20")
+     while(dinheiro>=10) {
+     arara++
+     dinheiro = dinheiro - 10
+     }
+     console.log(arara+ "De R$10")
+     while(dinheiro>=5) {
+     garca++
+     dinheiro = dinheiro - 5
+     }
+     console.log(garca+"De R$5")
+     while(dinheiro>=2) {
+     tartaruga++
+     dinheiro = dinheiro - 2
+     }
+     console.log(tartaruga+"De R$2")
+
